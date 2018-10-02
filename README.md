@@ -27,8 +27,11 @@ This script does the following:
     
 + Outputs results to both command line and an HTML file
 
-+ Includes a Usage or Help page
++ Includes a Usage / Help page
 
++ Includes a command line user interface when no arguments are given
+
++ Includes a README written in Markdown
 ---
 Commands to Run This Python Script:
 + portscanner.py
