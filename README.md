@@ -34,25 +34,25 @@ This script does the following:
 + Includes a README written in Markdown
 ---
 Commands to Run This Python Script:
-+ portscanner.py
++ `portscanner.py`
     + Will ask for host, port, and protocol
     
     
-+ portscanner.py -h
++ `portscanner.py -h`
     + Will give you the usage message
 
 
-+ portscanner.py < host IP > < ports > < protocol >
++ `portscanner.py < host IP > < ports > < protocol >`
     + Protocol is optional
     + Default Protocol is TCP
 ---
 Examples:
 
-+ portscanner.py
-+ portscanner.py 192.168.186.1 80
-+ portscanner.py 127.0.0.1-255 80,443 
-+ portscanner.py 192.168.0.0/24 20-30 udp
-+ portscanner.py 127.0.0.1-255 1-1000 icmp
++ `portscanner.py`
++ `portscanner.py 192.168.186.1 80`
++ `portscanner.py 127.0.0.1-255 80,443`
++ `portscanner.py 192.168.0.0/24 20-30 udp`
++ `portscanner.py 127.0.0.1-255 1-1000 icmp`
 
 *Note: when the icmp protocol is chosen, you still need to specify some ports, even though they are not used*
 
