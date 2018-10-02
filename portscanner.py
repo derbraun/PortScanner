@@ -3,7 +3,8 @@
 #   This port scanner was written by: Daniel Brown
 #
 #   This script was written for Python 3
-#
+#   Tested on Python 3 for Windows
+
 #   GitHub: https://github.com/derbraun/PortScanner
 
 
@@ -78,7 +79,8 @@ if arguments >= 2:
 
 elif arguments == 0:
     host = input("Enter a remote host to scan: ")
-    port = input("Enter a range of ports to scan")
+    port = input("Enter a range of ports to scan: ")
+    proto = input("Enter a protocol to use: ")
 
 else:
     printUsage()
@@ -122,6 +124,8 @@ try:
     # Splitting ranges
     if "/" in host:
         sBegin, sEnd = sub4.split("/")
+        if sEnd == "24":
+            sEnd = "255"
 
     elif "-" in host:
         sBegin, sEnd = sub4.split("-")
